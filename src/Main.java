@@ -8,10 +8,10 @@ public class Main {
     public static Algoritmo getAlgoritmo(TipoJogada tipo) {
         Algoritmo algoritmo = null;
         switch (tipo) {
-            case PAPEL -> algoritmo = new Papel();
-            case TESOURA -> algoritmo =  new Tesoura();
-            case PEDRA -> algoritmo =  new Pedra();
-            default -> throw new IllegalArgumentException("Tipo invalido");
+            case PAPEL: algoritmo = new Papel(); break;
+            case TESOURA: algoritmo =  new Tesoura(); break;
+            case PEDRA: algoritmo =  new Pedra(); break;
+            default: throw new IllegalArgumentException("Tipo invalido");
         }
         return algoritmo;
     }
