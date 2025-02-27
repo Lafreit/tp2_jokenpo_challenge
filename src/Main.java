@@ -11,6 +11,8 @@ public class Main {
             case PAPEL: algoritmo = new Papel(); break;
             case TESOURA: algoritmo =  new Tesoura(); break;
             case PEDRA: algoritmo =  new Pedra(); break;
+            case LAGARTO: algoritmo =  new Lagarto(); break;
+            case SPOCK: algoritmo =  new Spock(); break;
             default: throw new IllegalArgumentException("Tipo invalido");
         }
         return algoritmo;
